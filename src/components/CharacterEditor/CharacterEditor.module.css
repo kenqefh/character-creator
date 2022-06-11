@@ -42,7 +42,8 @@
 
 .characterWrapper {
   position: fixed;
-  right: 0;
+  right: 50%;
+  transform: translateX(100%);
   top: 128px;
   height: 80%;
   min-height: 500px;
@@ -51,4 +52,37 @@
 .controlColumn {
   width: 50%;
   margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .maxWidthWrapper {
+    width: 100%;
+  }
+
+  .characterWrapper {
+    position: relative;
+    height: 80vh;
+    min-height: 500px;
+
+    transform: translateX(0);
+    right: 0;
+  }
+
+  .controlColumn {
+    width: auto;
+    position: fixed;
+    bottom: 25%;
+    left: 6px;
+    right: 6px;
+    white-space: nowrap;
+    overflow: auto;
+
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+    z-index: 100;
+  }
+  .controlColumn::-webkit-scrollbar {
+    display: none;
+  }
 }
