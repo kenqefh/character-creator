@@ -13,5 +13,4 @@ export const range = (n) => [...Array(n).keys()];
  * eg. zeroPadNumber(5) -> "05"
  *     zeroPadNumber(20, 4) -> "0020"
  */
-export const zeroPadNumber = (n, spaces = 2) =>
-  String(n).padStart(spaces, '0');
+export const zeroPadNumber = (n, spaces = 2) => String(n).padStart(spaces, '0');

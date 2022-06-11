@@ -1,12 +1,9 @@
 import React from 'react';
 
-import {
-  defaultSkinColor,
-  defaultClothesColor,
-} from '../../constants';
-import Character from '../Character';
-import MaxWidthWrapper from '../MaxWidthWrapper';
-import ControlPane from '../ControlPane';
+import { defaultSkinColor, defaultClothesColor } from 'constants';
+import Character from 'components/Character';
+import MaxWidthWrapper from 'components/MaxWidthWrapper';
+import ControlPane from 'components/ControlPane';
 
 import {
   bodyOptions,
@@ -24,9 +21,7 @@ function App() {
   const [face, setFace] = React.useState(0);
   const [accessory, setAccessory] = React.useState(0);
   const [skinColor, setSkinColor] = React.useState(defaultSkinColor);
-  const [clothesColor, setClothesColor] = React.useState(
-    defaultClothesColor
-  );
+  const [clothesColor, setClothesColor] = React.useState(defaultClothesColor);
 
   return (
     <main className={styles.characterEditor}>
@@ -34,8 +29,8 @@ function App() {
         <header className={styles.header}>
           <h1 className={styles.title}>Create your Character</h1>
           <p className={styles.description}>
-            Customize your character's look and style using the
-            controls below. What sort of adventure will you embark on?{' '}
+            Customize your character's look and style using the controls below. What sort of
+            adventure will you embark on?{' '}
           </p>
         </header>
         <div className={styles.controlColumn}>

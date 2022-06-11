@@ -5,8 +5,8 @@ import {
   numAccessories,
   skinColors,
   clothesColors,
-} from '../../constants';
-import { zeroPadNumber, range } from '../../utils';
+} from 'constants';
+import { zeroPadNumber, range } from 'utils';
 
 export const bodyOptions = range(numBodies).map((index) => {
   return {
@@ -44,13 +44,11 @@ export const skinColorOptions = skinColors.map(({ label, color }) => {
     children: null,
   };
 });
-export const clothesColorOptions = clothesColors.map(
-  ({ label, color }) => {
-    return {
-      id: color,
-      label,
-      color,
-      children: null,
-    };
-  }
-);
+export const clothesColorOptions = clothesColors.map(({ label, color }) => {
+  return {
+    id: color,
+    label,
+    color,
+    children: null,
+  };
+});
