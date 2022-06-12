@@ -5,3 +5,15 @@
   margin-block-end: -22px;
   padding: 22px;
 }
+
+@media (max-width: 1024px) {
+  .buttonRow {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+  }
+
+  .buttonRow::-webkit-scrollbar {
+    display: none;
+  }
+}

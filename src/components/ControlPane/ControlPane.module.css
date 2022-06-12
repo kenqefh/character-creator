@@ -29,5 +29,7 @@
   .controlPane {
     display: inline-block;
     margin-inline: 8px;
+    width: 100%;
+    max-width: 512px;
   }
 }
